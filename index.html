@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hopi Agency — Criamos marcas que dominam o digital</title>
+  <meta name="description" content="Hopi Agency: estratégia, design e tecnologia para marcas que querem liderar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=DM+Serif+Display:ital@1&display=swap"
+    rel="stylesheet"> <!-- CSS -->
+  <link rel="stylesheet" href="style.css?v=12">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring">
+        <svg viewBox="0 0 100 100">
+          <circle class="loader-ring-bg" cx="50" cy="50" r="42" />
+          <circle class="loader-ring-fill" cx="50" cy="50" r="42" />
+        </svg>
+        <img src="logo-hopi.png" alt="Hopi" class="loader-logo-img">
+      </div>
+      <div class="loader-text">
+        <span class="loader-counter">0</span><span class="loader-percent">%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="logo-hopi.png" alt="Hopi" class="logo-img">
+      </a>
+      <div class="nav-divider"></div>
+      <nav class="nav-desktop">
+        <a href="#work" class="nav-link">Projetos</a>
+        <a href="#services" class="nav-link">Serviços</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#process" class="nav-link">Processo</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+      <a href="#contact" class="btn-header">Iniciar projeto</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-nav">
+      <a href="#work" class="mobile-link">Projetos</a>
+      <a href="#services" class="mobile-link">Serviços</a>
+      <a href="#about" class="mobile-link">Sobre</a>
+      <a href="#process" class="mobile-link">Processo</a>
+      <a href="#contact" class="mobile-link accent">Iniciar projeto</a>
+    </nav>
+  </div>
+
+  <!-- MAIN STACK CONTEXT -->
+  <main class="stack-container">
+
+    <!-- HERO -->
+    <section id="hero" class="hero stacked-section">
+      <div class="hero-glow"></div>
+      <div class="container hero-wrap">
+        <div class="hero-center reveal-hero">
+          <div class="hero-badge"><span class="badge-dot"></span>Disponíveis para novos projetos</div>
+          <h1 class="hero-title">Criamos marcas que <br><em>dominam</em> o digital.</h1>
+          <p class="hero-sub">Estratégia, design e tecnologia unidos para transformar sua presença digital em resultados
+            reais.</p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">Iniciar projeto <svg width="16" height="16" viewBox="0 0 16 16"
+                fill="none">
+                <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></a>
+            <a href="#work" class="btn-ghost">Ver projetos</a>
+          </div>
+        </div>
+        <div class="hero-stats-row reveal-hero-delayed">
+          <div class="hstat">
+            <div class="hstat-val"><span class="stat-number" data-count="150">0</span><span class="hstat-suf">+</span>
+            </div><span class="hstat-lbl">Projetos entregues</span>
+          </div>
+          <div class="hstat-sep"></div>
+          <div class="hstat">
+            <div class="hstat-val"><span class="stat-number" data-count="98">0</span><span class="hstat-suf">%</span>
+            </div><span class="hstat-lbl">Satisfação</span>
+          </div>
+          <div class="hstat-sep"></div>
+          <div class="hstat">
+            <div class="hstat-val"><span class="stat-number" data-count="5">0</span><span class="hstat-suf">anos</span>
+            </div><span class="hstat-lbl">Experiência</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WORK / PROJECTS -->
+    <section id="work" class="section stacked-section">
+      <div class="container">
+        <div class="section-header-katanex reveal section-header-with-cta">
+          <div class="sh-left">
+            <h2 class="section-title-big">Projetos</h2>
+            <p class="section-desc">Cada projeto é uma história de transformação digital. Veja como ajudamos marcas a se
+              destacarem.</p>
+          </div>
+          <a href="#contact" class="section-intro-cta">
+            <div class="cta-inner">
+              <div>
+                <span class="cta-label">Portfólio</span>
+                <h3 class="cta-title">Veja Nosso Trabalho</h3>
+              </div>
+              <div class="cta-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="cta-glow"></div>
+          </a>
+        </div>
+        <div class="projects-grid">
+          <a href="#" class="project-card reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder"
+                style="background: linear-gradient(135deg, #0a0a0a 0%, #1a3a1a 100%);">
+                <div class="project-overlay-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags"><span>Branding</span><span>Web Design</span></div>
+              <h3 class="project-name">NovaTech</h3>
+              <p class="project-desc">Rebranding completo e plataforma digital para fintech disruptiva.</p>
+            </div>
+          </a>
+          <a href="#" class="project-card reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder"
+                style="background: linear-gradient(135deg, #0a0a0a 0%, #0a1a0a 50%, #1a2a1a 100%);">
+                <div class="project-overlay-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags"><span>E-commerce</span><span>Performance</span></div>
+              <h3 class="project-name">Verdant Store</h3>
+              <p class="project-desc">Loja online premium com foco em conversão e experiência do usuário.</p>
+            </div>
+          </a>
+          <a href="#" class="project-card reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder"
+                style="background: linear-gradient(135deg, #0d0d0d 0%, #0d1a0d 100%);">
+                <div class="project-overlay-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags"><span>App Design</span><span>UI/UX</span></div>
+              <h3 class="project-name">Pulse Health</h3>
+              <p class="project-desc">Aplicativo de saúde com interface intuitiva e dashboard de dados.</p>
+            </div>
+          </a>
+          <a href="#" class="project-card reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder"
+                style="background: linear-gradient(135deg, #080808 0%, #102010 100%);">
+                <div class="project-overlay-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags"><span>Social Media</span><span>Estratégia</span></div>
+              <h3 class="project-name">Aether Brands</h3>
+              <p class="project-desc">Estratégia de conteúdo e gestão de redes para marca de lifestyle.</p>
+            </div>
+          </a>
+        </div>
+        <div class="section-cta reveal">
+          <a href="#contact" class="btn-outline">Ver todos os projetos <svg width="14" height="14" viewBox="0 0 16 16"
+              fill="none">
+              <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section stacked-section">
+      <div class="container">
+        <div class="section-header-katanex reveal align-center">
+          <div class="sh-left">
+            <h2 class="section-title-big">Serviços</h2>
+          </div>
+          <div class="sh-right">
+            <p class="section-desc">Soluções completas de design, tecnologia e estratégia para marcas que querem dominar
+              o digital.</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg></div>
+            <div class="service-number">01</div>
+            <h3 class="service-name">Branding &amp; Identidade</h3>
+            <p class="service-desc">Construimos identidades visuais marcantes que comunicam a essência da sua marca.</p>
+            <ul class="service-list">
+              <li>Logo &amp; identidade visual</li>
+              <li>Brand guidelines</li>
+              <li>Naming &amp; tom de voz</li>
+              <li>Brand strategy</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5" />
+                <path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.5" />
+              </svg></div>
+            <div class="service-number">02</div>
+            <h3 class="service-name">Web Design &amp; UI/UX</h3>
+            <p class="service-desc">Interfaces bonitas e funcionais que encantam usuários e convertem visitantes.</p>
+            <ul class="service-list">
+              <li>UI/UX design</li>
+              <li>Landing pages</li>
+              <li>Design systems</li>
+              <li>Protótipos interativos</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <polyline points="16,18 22,12 16,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <polyline points="8,6 2,12 8,18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
+            <div class="service-number">03</div>
+            <h3 class="service-name">Desenvolvimento Web</h3>
+            <p class="service-desc">Experiências digitais rápidas, seguras e escaláveis com tecnologias modernas.</p>
+            <ul class="service-list">
+              <li>Sites institucionais</li>
+              <li>E-commerce</li>
+              <li>Web apps &amp; SaaS</li>
+              <li>CMS customizado</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
+            <div class="service-number">04</div>
+            <h3 class="service-name">Performance &amp; Growth</h3>
+            <p class="service-desc">Estratégias de tráfego pago, SEO e otimização de conversão para crescer.</p>
+            <ul class="service-list">
+              <li>Tráfego pago (Meta, Google)</li>
+              <li>SEO técnico e on-page</li>
+              <li>CRO &amp; analytics</li>
+              <li>Automação de marketing</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            <div class="service-number">05</div>
+            <h3 class="service-name">Motion &amp; Video</h3>
+            <p class="service-desc">Conteúdo audiovisual que captura atenção e conta sua história de forma impactante.
+            </p>
+            <ul class="service-list">
+              <li>Motion graphics</li>
+              <li>Videos institucionais</li>
+              <li>Animações para web</li>
+              <li>Conteúdo para redes</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            <div class="service-number">06</div>
+            <h3 class="service-name">Social Media</h3>
+            <p class="service-desc">Presenças digitais com estratégia, criatividade e consistência para engajar.</p>
+            <ul class="service-list">
+              <li>Gestão de redes</li>
+              <li>Planejamento editorial</li>
+              <li>Criação de conteúdo</li>
+              <li>Community management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section stacked-section">
+      <div class="container">
+        <div class="section-header-katanex reveal">
+          <div class="sh-left">
+            <h2 class="section-title-big">Sobre nós</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="about-lead">Somos um coletivo de estrategistas, designers e desenvolvedores obcecados por
+              resultados. Cada decisão é pensada para gerar impacto real no seu negócio.</p>
+            <p>Fundada em 2018, a Hopi nasceu da insatisfação com agências que entregam bonito mas não entregam
+              resultado. Nossa abordagem une estética de alto nível com performance mensurável.</p>
+            <p>Trabalhamos como extensão do seu time. Sem burocracia, sem ruído, só resultado.</p>
+
+            <a href="#contact" class="about-cta-card mt-8">
+              <div class="about-cta-inner">
+                <div class="about-cta-text">
+                  <span class="about-cta-label">Próximo Passo</span>
+                  <h3>Inicie Seu Projeto</h3>
+                </div>
+                <div class="about-cta-icon-wrapper">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="about-cta-hover-glow"></div>
+            </a>
+          </div>
+          <div class="about-values reveal">
+            <div class="value-item">
+              <div class="value-number">01</div>
+              <div>
+                <h4>Essencialismo</h4>
+                <p>Menos, mas melhor. Focamos no que realmente importa para criar impacto duradouro, eliminando o
+                  excesso e o desnecessário.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-number">02</div>
+              <div>
+                <h4>Foco no Problema</h4>
+                <p>Antes de desenhar a solução, nós apaixonamos pelo problema. Um diagnóstico preciso e a base de
+                  qualquer entrega de sucesso.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-number">03</div>
+              <div>
+                <h4>Inovação Guiada por Dados</h4>
+                <p>A criatividade encontra o seu potencial máximo quando informada por dados. Unimos visão artística a
+                  inteligência analítica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-marquee reveal">
+          <div class="marquee">
+            <div class="marquee-track marquee-slow">
+              <span>Essencialismo</span><span class="marquee-sep">/</span>
+              <span>Compromisso</span><span class="marquee-sep">/</span>
+              <span>Transparência</span><span class="marquee-sep">/</span>
+              <span>Excelência</span><span class="marquee-sep">/</span>
+              <span>Inovação</span><span class="marquee-sep">/</span>
+              <span>Colaboração</span><span class="marquee-sep">/</span>
+              <span>Integridade</span><span class="marquee-sep">/</span>
+              <span>Resultado</span><span class="marquee-sep">/</span>
+              <!-- Duplicate for infinity scroll -->
+              <span>Essencialismo</span><span class="marquee-sep">/</span>
+              <span>Compromisso</span><span class="marquee-sep">/</span>
+              <span>Transparência</span><span class="marquee-sep">/</span>
+              <span>Excelência</span><span class="marquee-sep">/</span>
+              <span>Inovação</span><span class="marquee-sep">/</span>
+              <span>Colaboração</span><span class="marquee-sep">/</span>
+              <span>Integridade</span><span class="marquee-sep">/</span>
+              <span>Resultado</span><span class="marquee-sep">/</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section stacked-section">
+      <div class="container">
+        <div class="section-header-katanex reveal align-center">
+          <div class="sh-left">
+            <h2 class="section-title-big">Processo</h2>
+          </div>
+          <div class="sh-right">
+            <p class="section-desc">Como transformamos ideias ousadas em resultados concretos, passo a passo.</p>
+          </div>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <div class="process-dot">
+              <svg class="process-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+            </div>
+            <div class="process-content"><span class="process-number">01</span>
+              <h3>Discovery</h3>
+              <p>Mergulhamos no seu negócio, entendemos objetivos e mapeamos oportunidades.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-dot">
+              <svg class="process-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+            </div>
+            <div class="process-content"><span class="process-number">02</span>
+              <h3>Estratégia</h3>
+              <p>Definimos posicionamento, personas e arquitetura de informação.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-dot">
+              <svg class="process-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <div class="process-content"><span class="process-number">03</span>
+              <h3>Design &amp; Desenvolvimento</h3>
+              <p>Wireframes, protótipos, código limpo e performático — do conceito ao produto final.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-dot">
+              <svg class="process-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <div class="process-content"><span class="process-number">04</span>
+              <h3>Lançamento</h3>
+              <p>Deploy, testes e estratégias de crescimento desde o dia 1.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section stacked-section">
+      <div class="container">
+        <div class="section-header-katanex reveal">
+          <div class="sh-left">
+            <h2 class="section-title-big">Clientes</h2>
+          </div>
+          <div class="sh-right">
+            <p class="section-desc">O que nossos clientes dizem sobre trabalhar com a Hopi.</p>
+          </div>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg></div>
+            <p class="testimonial-text">"A Hopi transformou completamente nossa presença digital. Em 3 meses, dobramos
+              nosso tráfego e triplicamos as conversões."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RM</div>
+              <div>
+                <div class="author-name">Rafael Mendes</div>
+                <div class="author-role">CEO, NovaTech</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg></div>
+            <p class="testimonial-text">"Finalmente uma agência que entende de negócio e não só de design. Eles pensam
+              junto, sugerem, desafiam."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">CS</div>
+              <div>
+                <div class="author-name">Camila Santos</div>
+                <div class="author-role">Fundadora, Verdant Store</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg></div>
+            <p class="testimonial-text">"O app que a Hopi desenhou pra gente recebeu nota 4.9 na App Store. Parceiros
+              incríveis."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DL</div>
+              <div>
+                <div class="author-name">Diego Lima</div>
+                <div class="author-role">CTO, Pulse Health</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section stacked-section">
+      <div class="container">
+        <div class="section-header-katanex reveal align-center">
+          <div class="sh-left">
+            <h2 class="section-title-big">FAQ's</h2>
+          </div>
+          <div class="sh-right">
+            <p class="section-desc">Respostas para as perguntas mais comuns sobre nossos serviços.</p>
+          </div>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item reveal"><button class="faq-question">
+              <div class="faq-q-left"><span class="faq-num">01</span><span class="faq-q-text">Quanto custa um projeto
+                  com a Hopi?</span></div>
+              <div class="faq-toggle"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <p>Projetos de branding começam a partir de R$ 8.000 e sites completos a partir de R$ 15.000. Entre em
+                contato para um orçamento personalizado.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal"><button class="faq-question">
+              <div class="faq-q-left"><span class="faq-num">02</span><span class="faq-q-text">Qual o prazo médio de
+                  entrega?</span></div>
+              <div class="faq-toggle"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <p>Branding: 4-6 semanas. Sites: 6-10 semanas. Projetos maiores: 12-16 semanas. Sempre alinhamos
+                cronograma antes.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal"><button class="faq-question">
+              <div class="faq-q-left"><span class="faq-num">03</span><span class="faq-q-text">Vocês trabalham com
+                  clientes de fora do Brasil?</span></div>
+              <div class="faq-toggle"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Temos clientes em Portugal, EUA e América Latina. Trabalhamos 100% remoto.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal"><button class="faq-question">
+              <div class="faq-q-left"><span class="faq-num">04</span><span class="faq-q-text">Como funciona o processo
+                  de pagamento?</span></div>
+              <div class="faq-toggle"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <p>40% na aprovação da proposta, 30% na aprovação do design e 30% na entrega final. PIX, transferência e
+                cartão.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal"><button class="faq-question">
+              <div class="faq-q-left"><span class="faq-num">05</span><span class="faq-q-text">Oferecem suporte após a
+                  entrega?</span></div>
+              <div class="faq-toggle"><span></span><span></span></div>
+            </button>
+            <div class="faq-answer">
+              <p>Todos os projetos incluem 30 dias de suporte gratuito. Também oferecemos planos de manutenção mensal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIFIED CTA & FOOTER -->
+    <section id="contact" class="unified-footer stacked-section">
+      <!-- Optional subtle vertical lines background -->
+      <div class="uf-bg-lines"></div>
+
+      <div class="container uf-container">
+        <!-- Top Full CTA -->
+        <div class="uf-top reveal">
+          <span class="uf-label">INICIAR PROJETO</span>
+          <h2 class="uf-title">Não cresça com esforço. <br>Cresça com inteligência.</h2>
+          <p class="uf-desc">
+            A Hopi ajuda você a automatizar fluxos complexos, reduzir
+            custos operacionais e escalar mais rápido — sem perder a essência.
+          </p>
+          <div class="uf-btns">
+            <a href="#" class="btn-uf-primary">Entrar em contato</a>
+            <a href="#about" class="btn-uf-secondary">Sobre nós</a>
+          </div>
+        </div>
+
+        <!-- Middle Links Divider -->
+        <div class="uf-middle reveal">
+          <div class="uf-link-row">
+            <span class="uf-row-label">Páginas</span>
+            <div class="uf-line"></div>
+            <div class="uf-links">
+              <a href="#">Início</a>
+              <a href="#services">Serviços</a>
+              <a href="#about">Sobre</a>
+              <a href="#work">Projetos</a>
+              <a href="#contact">Contato</a>
+            </div>
+          </div>
+          <div class="uf-link-row">
+            <span class="uf-row-label">Legal</span>
+            <div class="uf-line"></div>
+            <div class="uf-links">
+              <a href="#">Política de Privacidade</a>
+              <a href="#">Termos e Condições</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Brand & Socials -->
+        <div class="uf-bottom reveal">
+          <div class="uf-brand">
+            <img src="logo-hopi.png" alt="Hopi" class="uf-logo">
+            <span class="uf-copyright">Hopi Agency 2026. Todos os direitos reservados.</span>
+          </div>
+          <div class="uf-socials">
+            <a href="#" aria-label="Facebook" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" aria-label="X" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M4 4l16 16M4 20L20 4" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GSAP & Lenis for Premium Animations -->
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="main.js?v=12"></script>
+</body>
+
+</html>
