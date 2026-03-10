@@ -309,19 +309,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Header parallax fade out
+    // Header — show/hide based on scroll direction
     const header = document.getElementById('header');
     if (header) {
-      gsap.to(header, {
-        opacity: 0,
-        y: -30,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: '.hero',
-          start: '10% top',
-          end: '40% top',
-          scrub: true,
+      let lastScrollY = 0;
+      lenis.on('scroll', ({ scroll }) => {
+        if (scroll > 120) {
+          if (scroll > lastScrollY) {
+            header.classList.add('header-hidden');
+          } else {
+            header.classList.remove('header-hidden');
+          }
+        } else {
+          header.classList.remove('header-hidden');
         }
+        lastScrollY = scroll;
       });
     }
 
@@ -365,14 +367,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = btn.parentElement;
       const isActive = item.classList.contains('active');
 
-      // Close all
+      // Close all and reset aria
       document.querySelectorAll('.faq-item.active').forEach(active => {
         active.classList.remove('active');
+        active.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
       });
 
       // Toggle current
       if (!isActive) {
         item.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
         // Simple GSAP bounce
         gsap.fromTo(item.querySelector('.faq-answer'),
           { height: 0, opacity: 0 },
